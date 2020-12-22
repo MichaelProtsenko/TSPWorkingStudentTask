@@ -4,7 +4,7 @@ A solver for the Traveling Salesman Problem using the Lin-Kernighan algorithm.
 ### Usage:
 
 - Open the Main.java class and paste the path to your input and output files (examples are included in the repository)
-- Choose the allowed runtime by adjusting the secondsToRun variable (for example file with 29 locations >10 seconds are enough to come up with an optimal solution) 
+- Choose the allowed runtime by adjusting the secondsToRun variable (for the example file with 29 locations >10 seconds are enough to come up with an optimal solution) 
 - Run the project 
 
 ---
