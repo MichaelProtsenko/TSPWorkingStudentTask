@@ -15,8 +15,8 @@ It takes a CSV file with distances between two locations in form of a CSV file a
 Since finding an exact solution for 29 locations would take way too much time (complexity of O(n^2*2^n)), I decided to use a heuristical approach. After analyzing several heuristic algorithms, I decided to settle for the Lin-Kernighan algorithm, as I found some good resources to learn more about it and a [great implementation on GitHub](https://github.com/RodolfoPichardo/LinKernighanTSP/).
 After analyzing the task, I decided I’m going to use an interface to solve the TSP with a method than takes distances as input and returns an array with the optimal tour. For parsing the distances and writing the optimal tour to a CSV I wrote two classes – DistanceParser and CSVWriter. 	
 
-The classes “LinKernighan” (containing the actual algorithm) and “Edge” (representing a path between two locations) were taken from an already existing implementation
-(github.com/RodolfoPichardo/LinKernighanTSP/) and slightly edited to fit the formatting of the parsed CSV file. The implementation is heavily based on the paper 
+The classes “LinKernighan” (containing the actual algorithm) and “Edge” (representing a path between two locations) were taken from the already existing implementation
+and slightly edited to fit the formatting of the parsed CSV file. The implementation is heavily based on the paper 
 “An Effective Heuristic Algorithm for the Traveling-Salesman Problem" by Shen Lin and Brian Kernighan. To make it short, the program starts by creating a random tour using the 
 “drunken sailor algorithm”, which then gets more and more improved by the “improve” methods in the LinKernighan class. 	
 
