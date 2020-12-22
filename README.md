@@ -21,6 +21,7 @@ The classes “LinKernighan” (containing the actual algorithm) and “Edge” 
 “drunken sailor algorithm”, which then gets more and more improved by the “improve” methods in the LinKernighan class. 	
 
 What I didn’t expect is how fast a single run of the algorithm finds a solution – one run of the Lin-Kernighan implementation needs about 60-70ms on my machine to come up with a tour. The whole process gets repeated until the allowed time to run (specified in main’s secondsToRun variable) is up. The tour with the shortest total distance gets saved and written to the CSV file by the CSVWriter class once the program is done.
+
 According to my tests it seems like a total distance of 1610 is the shortest the algorithm can find. After doing some research on the internet I found out that this specific dataset (usually referred to as bayg29) is often used for TSP problems. According to [this document](https://www.or.uni-bonn.de/lectures/ws17/co_exercises/programming/tsp/tsp95.pdf) by Gerhard Reinelt from the University of Heidelberg, 1610 indeed seems to be the shortest possible distance. With only one second of allowed runtime the algorithm comes up with a tour that has a distance between 1610 and 1650 - anything longer than 10 seconds pretty much always results in the optimal solution of 1610.
 
 For reference, here is the machine the program was written on and tested with:
